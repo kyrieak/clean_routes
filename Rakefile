@@ -7,7 +7,3 @@ Rake::TestTask.new do |t|
   t.verbose = true
 end
 task :default => :test
-
-task :clean_routes => :environment do
-  CleanRoutes.clean_routes
-ebd

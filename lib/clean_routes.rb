@@ -3,7 +3,7 @@ require_relative "./clean_routes/version"
 module CleanRoutes
 
   def clean_routes
-		grouped_routes.each_key do |controller|
+		routes_list.each_key do |controller|
 			puts controller_name(controller)
 
 			routes_list[controller].each do |route|
